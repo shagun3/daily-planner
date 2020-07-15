@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Daily Planner for the needy who want to be neat.">
+        <meta name="author" content="Patricia Georgescu">
+        <link rel="icon" href="assets/pics/favicon.ico">
+
+        <title>Edit Task | Daily Planner</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- My custom styles -->
+        <link href="assets/css/customStyles.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Daily Planner</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ml-auto">
+                        <li class="nav-item home">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link add" href="add.html" >Add Entry</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link add" href="edit.html" >Edit Entry</a>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main role="main" class="container rounded">
+        <h2 class='border-bottom pb-2 pt-3 heading'> My daily tasks - <span> Edit task </span> </h2>
+        <br>
+        <form id='task-form-edit' action='index.html'>
+            <div class='form-group'>
+                <label for='task'>Task</label>
+                <input type='text' class='form-control' id='task' placeholder='Enter a task here' name='task' required>
+            </div>
+            <div class='form-group'>
+                <label for='priority'> Priority </label>
+                <select class='form-control' id='priority' name='priority'>
+                    <option value='low'> Low </option>
+                    <option value='normal' selected> Normal </option>
+                    <option value='high'> High </option>
+                </select>
+            </div>
+            <div class='form-group' >
+                <label for='date'>Date</label>
+                <input type='date' class='form-control' id='date' name='date' required>
+            </div>
+            <div class='form-group' >
+                <label for='time'>Time</label>
+                <input type='time' class='form-control' id='time' name='time' required>
+            </div>
+            <input id='taskId' value=""> </input>
+            <button type='submit' class='btn btn-primary mb-3'>Submit</button>
+        </form>
+    </main><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"> </script>
+    </body>
+</html>

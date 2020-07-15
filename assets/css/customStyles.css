@@ -1,0 +1,42 @@
+body {
+    padding-top: 5rem;
+    background: url('../pics/a.jfif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body .container:nth-child(2) {
+    background-color: #ffffff;
+}
+
+td a {
+    padding: 10px;
+}
+
+td a:nth-of-type(1) {
+    color:  #2eb82e;
+}
+
+td a:hover {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+td a:nth-of-type(2):hover {
+    color:  #ff3300;
+}
+
+#taskId{
+    display: none;
+}
+
+.heading span {
+    color: #2eb82e;
+}
+
+.disabled, table tr td{
+    cursor: default;
+}
+
+.rounded {
+    border-radius: 15px!important;
+}

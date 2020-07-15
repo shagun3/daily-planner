@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Daily Planner for the needy who want to be neat.">
+        <meta name="author" content="Patricia Georgescu">
+        <link rel="icon" href="assets/pics/favicon.ico">
+
+        <title>Daily Planner</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- My custom styles -->
+        <link href="assets/css/customStyles.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container">
+                  <a class="navbar-brand" href="index.html">Daily Planner</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbar">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item home active">
+                        <a class="nav-link" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link add" href="add.html" >Add Entry</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link edit disabled" href="edit.html" >Edit Entry</a>
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+        </nav>
+
+        <main role="main" class="container rounded">
+            <h2 class="border-bottom pb-2 pt-2 heading"> My daily tasks </h2>
+            <br>
+            <table class="table table-striped">
+                <tr> 
+                    <th> Task </th>
+                    <th> Priority </th>
+                    <th> Date </th>
+                    <th> Time </th>
+                    <th> </th>
+                </tr>
+            </table>
+            
+            <a href="#" class="btn btn-primary mb-3 clearAll"> Clear all Tasks </a>
+            
+        </main><!-- /.container -->
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+        <script src="assets/js/vendor/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/main.js"> </script>
+    </body>
+</html>
